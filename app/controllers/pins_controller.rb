@@ -36,16 +36,16 @@ class PinsController < ApplicationController
   def update
 
       if @pin.update(pin_params)
-        format.html redirect_to @pin, notice: 'Pin was successfully updated.'
+        redirect_to @pin, notice: 'Pin was successfully updated.'
       else
-        format.html { render action: 'edit' }
+        render action: 'edit' 
       end
   end
 
 
   def destroy
     @pin.destroy
-    format.html { redirect_to pins_url }
+    redirect_to pins_url
   end
 
   private
