@@ -14,6 +14,7 @@ gem 'bootstrap-sass', '~> 3.1.1'
 gem 'devise', '~>3.1.0.rc2'
 gem 'paperclip', '~> 3.0'
 gem "aws-sdk", "~> 1.35.0"
+gem 'protected_attributes'
 
 
 
